@@ -23,7 +23,7 @@ using functions produced by Auclert, Bardozcy, Rognlie & Straub (ECMA, 2021)
 horzs = [0,1,2,8] # Response horizons (quarters after shock)
 
 # TFP shock (Chang, Chen & Schorfheide, 2021, Figures 7 and 9)
-data_ccs = read_csv('data/chang_chen_schorfheide.csv')
+data_ccs = read_csv('data/new_chang_chen_schorfheide.csv')
 irf_z_data = {}
 for v in ['TFP','GDP','BelowCutoff']:
     irf_z_data[v] = data_ccs[v+'_IRF_q50'].values[1:][horzs]/3
